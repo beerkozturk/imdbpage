@@ -1,6 +1,7 @@
 import React from "react";
 import MovieList from './MovieList';
-import SearchBar from './SearchBar'
+import SearchBar from './SearchBar';
+import searchCategory from "./searchcategory";
 
 class App extends React.Component {
 
@@ -52,8 +53,11 @@ class App extends React.Component {
                 <div className="row">
                     <div className="col-lg-12">
                         <SearchBar searchMovieProp={this.searchMovie} />
+                        <searchCategory></searchCategory>
                     </div>
                 </div>
+
+
 
                 <MovieList
                     movies={filterdMovies}

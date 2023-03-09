@@ -1,4 +1,5 @@
 import React from "react";
+import "./App.css";
 
 const MovieList = (props) => {
 
@@ -12,8 +13,8 @@ const MovieList = (props) => {
 
             {props.movies.map((movie) => (
 
-                <div className="col-lg-4" key={movie.id}>
-                    <div className="card mb-4 shadow-sm">
+                <div className="col-lg-4 box" key={movie.id} >
+                    <div className="card mb-4 shadow-sm" style={{ width: 410, margin: 90 }} >
                         <img src={movie.imageURL} className="card-img-top" alt="Sample Movie" />
                         <div className="card-body">
                             <h5 className="card-title">{movie.name}</h5>
