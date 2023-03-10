@@ -9,12 +9,12 @@ const MovieList = (props) => {
       } */
 
     return (
-        <div className="row">
+        <div className="row" style={{ alignContent: "end", marginTop: 90 }}>
 
-            {props.movies.map((movie) => (
+            {props.filteredMovies.map((movie) => (
 
                 <div className="col-lg-4 box" key={movie.id} >
-                    <div className="card mb-4 shadow-sm" style={{ width: 410, margin: 90 }} >
+                    <div className="card mb-4 shadow-sm" style={{ width: 410 }} >
                         <img src={movie.imageURL} className="card-img-top" alt="Sample Movie" />
                         <div className="card-body">
                             <h5 className="card-title">{movie.name}</h5>
