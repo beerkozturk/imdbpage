@@ -2,6 +2,7 @@ import React from "react";
 import MovieList from './MovieList';
 import SearchBar from './SearchBar';
 import Searchdene from "./Searchdene";
+import Ratingimdb from './Ratingimdb'
 
 
 class App extends React.Component {
@@ -77,10 +78,11 @@ class App extends React.Component {
 
                 <Searchdene filter={this.filterMovie} ></Searchdene>
 
-
+                <Ratingimdb></Ratingimdb>
                 <MovieList
                     filteredMovies={filterdMovies}
                     deleteMovieProp={this.deleteMovie} />
+
 
             </div>
         )
